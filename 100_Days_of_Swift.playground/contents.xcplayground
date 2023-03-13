@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='rendered' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='Day-2-arrays-dictionaries-sets-enums'/>
         <page name='Day-1-variables'/>
+        <page name='Day-2-arrays-dictionaries-sets-enums'/>
         <page name='Day-3-operators-conditions'/>
         <page name='Day-4-loops'/>
         <page name='Day-5-functions'/>
+        <page name='Day-6-closures'/>
     </pages>
 </playground>

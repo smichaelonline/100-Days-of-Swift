@@ -38,3 +38,33 @@ import UIKit
     print ("Ready or not, here I come!")
    */
 
+
+// REPEAT LOOPS
+// * not commonly used
+// Identical to a while loop except the condition to check is located at the end.
+
+// var number = 1
+//
+// repeat {
+//    print(number)
+//    number += 1
+//  } while number <= 20
+//
+//  print("Ready or not - here I come! ")
+
+
+// EXITING LOOPS
+// You can exit a loop at any time using the break keyword
+var countDown = 10
+while countDown >= 0 {
+  print(countDown)
+  
+  if countDown == 4 {
+    print("Lets go now")
+    break
+  }
+  
+  countDown -= 1
+}
+
+print("Blast off!")

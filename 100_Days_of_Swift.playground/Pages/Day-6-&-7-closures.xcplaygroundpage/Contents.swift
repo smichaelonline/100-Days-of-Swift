@@ -64,4 +64,43 @@ travel {
 
 // pt 2
 
+// Using closures as parameters when they accept parameters
 
+// We’ve been using () -> Void to mean “accepts no parameters and returns nothing”, but you can go ahead and fill the () with the types of any parameters that your closure should accept.
+
+func traveling(action: (String) -> Void) {
+  print("I'm getting ready to go.")
+  action("London")
+  print("I arrived!")
+}
+
+// using trailing closure syntax
+traveling { (place: String) in
+  print("I'm going to \(place) in my car")
+}
+
+
+// Using closures as parameters when they return values
+// you can replace Void in () -> Void to return a value
+
+func traveled(action: (String) -> String) {
+  print("I am planning on going")
+  let description = action("London")
+  print(description)
+  print("I left")
+}
+
+traveled { (place: String) -> String in
+  return "I went to \(place)"
+}
+
+
+// SHORTHAND PARAMETER NAMES
+
+// swift knows that the parameter and return are both strings so both "String" can be removed from the above
+  // left with "place in"
+// return can be removed since there is only one line of code which is the return value
+// Rather than writing place in we can let Swift provide automatic names for the closure’s parameters. These are named with a dollar sign, then a number counting from 0.
+traveled {
+  "I went to \($0)"
+}

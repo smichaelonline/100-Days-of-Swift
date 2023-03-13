@@ -68,3 +68,6 @@ while countDown >= 0 {
 }
 
 print("Blast off!")
+
+// EXITING MULTIPLE LOOPS
+// * If you put a loop inside a loop it’s called a nested loop
